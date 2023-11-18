@@ -252,15 +252,16 @@ def delsqlrec():
 if selected == "Home":
     # Title Image
 
-    col1, col2 = st.columns(2, gap='medium')
-    col1.markdown("## :blue[Domain] : Social Media")
-    col1.markdown("## :blue[Technologies used] : Python,MongoDB, Youtube Data API, MySql, Streamlit")
-    col1.markdown(
+    col1 = st.columns(1, gap='medium')
+    col1[0].image("youtubeMain.png")
+    col1[0].markdown("## :blue[Domain] : Social Media")
+    col1[0].markdown("## :blue[Technologies used] : Python,MongoDB, Youtube Data API, MySql, Streamlit")
+    col1[0].markdown(
         "## :blue[Overview] : Retrieving the Youtube channels data from the Google API, storing it in a MongoDB as data lake, migrating and transforming data into a SQL database,then querying the data and displaying it in the Streamlit app.")
-    col2.markdown("#   ")
-    col2.markdown("#   ")
-    col2.markdown("#   ")
-    col2.image("youtubeMain.png")
+    #col2.markdown("#   ")
+    #col2.markdown("#   ")
+    #col2.markdown("#   ")
+    #col1.image("youtubeMain.png")
 
 # EXTRACT and TRANSFORM PAGE
 if selected == "Extract and Transform":
